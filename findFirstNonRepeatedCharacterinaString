@@ -1,0 +1,19 @@
+package Java8featurescodingpractice.com;
+
+import java.util.Optional;
+
+//Find the first non-repeated character in a string
+public class Main4 {
+    public static void main(String[] args) {
+
+        String input = "swiss";
+        Optional<Character> firstNonRepeated = input.chars()
+                .mapToObj(c -> (char) c)
+                .filter(c -> input.indexOf(c) == input.lastIndexOf(c))
+                .findFirst();
+        System.out.println(firstNonRepeated.orElse(null));
+    }
+
+}
+------------------output---------
+w
