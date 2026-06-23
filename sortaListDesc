@@ -1,0 +1,18 @@
+package Java8featurescodingpractice.com;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+//Sort a list of integers in descending order
+public class Main2 {
+    public static void main(String[] args) {
+        List<Integer> numbers= Arrays.asList(3,5,1,4,2);
+        List<Integer>sortedNumbers=numbers.stream().sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
+        System.out.println(sortedNumbers);
+    }
+}
+--------output-------------
+[5,4,3,2,1]
