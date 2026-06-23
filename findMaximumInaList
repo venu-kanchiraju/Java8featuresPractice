@@ -1,0 +1,15 @@
+package Java8featurescodingpractice.com;
+
+import java.util.Arrays;
+import java.util.List;
+
+//Find Maximum in a list
+public class Main1 {
+    public static void main(String[] args) {
+        List<Integer>numbers= Arrays.asList(10,20,30,40,50);
+       int maxNumber= numbers.stream().max(Integer::compare).orElseThrow();
+        System.out.println(maxNumber);
+    }
+}
+------------output---------
+50
