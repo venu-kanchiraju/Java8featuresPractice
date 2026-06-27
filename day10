@@ -1,0 +1,19 @@
+package java8practices.com;
+//check if the number is even or odd using lambda expression
+public interface EvenOrOdd {
+    boolean isEvenOrOdd(int a);
+}
+class Main4{
+    public static void main(String[] args) {
+        EvenOrOdd evenOrOdd=(a)->{
+               if(a%2==0)
+                   return true;
+               else
+                   return false;
+
+            };
+        System.out.println(evenOrOdd.isEvenOrOdd(4));
+    }
+}
+-------output----------
+  true
