@@ -1,0 +1,19 @@
+package java8practiceInstanceMethod.com;
+
+public interface Course {
+    void course();
+}
+class Demo3{
+    public void showCourse(){
+        System.out.println("SpringBoot");
+    }
+}
+class Main5{
+    public static void main(String[] args) {
+        Demo3 demo3=new Demo3();
+        Course course=demo3::showCourse;
+        course.course();
+    }
+}
+----------------output------------
+SpringBoot
