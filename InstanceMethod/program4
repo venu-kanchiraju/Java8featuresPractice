@@ -1,0 +1,19 @@
+package java8practiceInstanceMethod.com;
+
+public interface DisplayCity {
+    void showCity();
+}
+class City{
+    public void displayCity(){
+        System.out.println("Hyderabad");
+    }
+}
+class Demo2{
+    public static void main(String[] args) {
+        City city=new City();
+        DisplayCity displayCity=city::displayCity;
+        displayCity.showCity();
+    }
+}
+-------------output-------
+Hyderabad
