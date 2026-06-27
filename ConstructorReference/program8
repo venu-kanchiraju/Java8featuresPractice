@@ -1,0 +1,34 @@
+package java8practiceConstructorReference.com;
+//In lambda expression it should be like these
+//interface BookFactory {
+//    Book create();
+//}
+//class Book {
+//    Book() {
+//        System.out.println("Book Created");
+//    }
+//}
+// class Main13 {
+//    public static void main(String[] args) {
+//        BookFactory factory = () -> new Book();
+//        factory.create();
+//    }
+//}
+
+//The below is the ConstructorReference
+interface BookFactory{
+    Book create();
+}
+class Book{
+    public Book(){
+        System.out.println("Book Created");
+    }
+}
+class Main13{
+    public static void main(String[] args) {
+        BookFactory bookFactory=Book::new;
+        Book book=bookFactory.create();
+    }
+}
+-----------output------
+Book Created
