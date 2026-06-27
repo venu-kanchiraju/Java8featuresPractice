@@ -1,0 +1,14 @@
+package java8practices.com;
+//(parameters) -> lambda expression
+//after java8 the lambda expression which is remove the boilerplate code
+interface Greeting {
+    void hey();
+}
+class Main{
+    public static void main(String[] args) {
+        Greeting g=()-> System.out.println("Hey!");
+        g.hey();
+    }
+}
+------------output----------
+  Hey!
