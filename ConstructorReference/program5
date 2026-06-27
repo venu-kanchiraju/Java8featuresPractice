@@ -1,0 +1,18 @@
+package java8practiceConstructorReference.com;
+
+public interface StudentFactory1 {
+    Student1 create(String name);
+}
+class Student1{
+    Student1(String name){
+        System.out.println("The student name is: "+name);
+    }
+}
+class Main9{
+    public static void main(String[] args) {
+        StudentFactory1 studentFactory1=Student1::new;
+        Student1 student1=studentFactory1.create("Venu");
+    }
+}
+-------output-----
+The student name is: Venu
