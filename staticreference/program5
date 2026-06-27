@@ -1,0 +1,13 @@
+package java8practices.com;
+//using static reference to find the maximum number
+public interface MaximumNumber {
+    int max(int a,int b);
+}
+class Main9{
+    public static void main(String[] args) {
+        MaximumNumber maximumNumber=Math::max;
+        System.out.println(maximumNumber.max(2,4));
+    }
+}
+-------output----------
+4
