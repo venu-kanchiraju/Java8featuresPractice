@@ -1,5 +1,8 @@
 package InstanceObjectanArbitraty.com;
-
+//eg:-String::compareToIgnoreCase
+//String::toUpperCase
+//String::length
+//String::isEmpty
 import java.util.Arrays;
 import java.util.List;
 public class Main {
