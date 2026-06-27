@@ -1,0 +1,18 @@
+package java8practiceConstructorReference.com;
+
+ interface EmployeeInfo {
+     Employee create();
+}
+class Employee{
+     Employee(){
+         System.out.println("Employee Created");
+     }
+}
+class Demo{
+    public static void main(String[] args) {
+        EmployeeInfo employeeInfo=Employee::new;
+        employeeInfo.create();
+    }
+}
+------output-----
+Employee Created
