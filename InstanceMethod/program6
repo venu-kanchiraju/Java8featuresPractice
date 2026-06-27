@@ -1,0 +1,19 @@
+package java8practiceInstanceMethod.com;
+
+ interface MobileInfo {
+     void mobile();
+}
+class Mobile{
+     public void showMobileBrand(){
+         System.out.println("Samsung");
+     }
+}
+class Demo4{
+    public static void main(String[] args) {
+        Mobile mobile=new Mobile();
+        MobileInfo mobileInfo=mobile::showMobileBrand;
+        mobileInfo.mobile();
+    }
+}
+-----------output----------
+Samsung
