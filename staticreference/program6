@@ -1,0 +1,13 @@
+package java8practices.com;
+
+public interface MinimumNumber {
+    int min(int a,int b);
+}
+class Main10{
+    public static void main(String[] args) {
+        MinimumNumber minimumNumber=Math::min;
+        System.out.println(minimumNumber.min(2,4));
+    }
+}
+---------output-------
+2
