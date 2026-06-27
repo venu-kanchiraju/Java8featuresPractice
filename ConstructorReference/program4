@@ -1,0 +1,18 @@
+package java8practiceConstructorReference.com;
+
+public interface MobileFactory {
+    Mobile getMobile();
+}
+class Mobile{
+    Mobile(){
+        System.out.println("The mobile factory");
+    }
+}
+class Main8{
+    public static void main(String[] args) {
+        MobileFactory mobileFactory=Mobile::new;
+        Mobile mobile=mobileFactory.getMobile();
+    }
+}
+------output--------
+The mobile factory
