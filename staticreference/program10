@@ -1,0 +1,18 @@
+package java8practices.com;
+//convert the lower to uppercase using the static reference
+public interface ConvertUpper {
+    String convertInCaps(String s);
+}
+class Con{
+    public static String convert(String s){
+        return s.toUpperCase();
+    }
+}
+class Main13{
+    public static void main(String[] args) {
+        ConvertUpper convertUpper=Con::convert;
+        System.out.println(convertUpper.convertInCaps("venu"));
+    }
+}
+-------output--------
+VENU
