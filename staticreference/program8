@@ -1,0 +1,13 @@
+package java8practices.com;
+//convert string to int which is staticReference
+public interface Convert {
+int convert(String s);
+}
+class Main12{
+    public static void main(String[] args) {
+        Convert convert=Integer::parseInt;
+        System.out.println(convert.convert("500"));
+    }
+}
+------output-------
+500
