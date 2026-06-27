@@ -1,0 +1,18 @@
+package java8practices.com;
+//functional interface which is only allow one abstract method is called functional interface.
+interface Greeting {
+    void hey();
+}
+class Main{
+    public static void main(String[] args) {
+        Greeting g=new Greeting() {
+            @Override
+            public void hey() {
+                System.out.println("Hey!");
+            }
+        };
+        g.hey();
+    }
+}
+------output------
+  Hey!
