@@ -1,0 +1,21 @@
+package java8practiceInstanceMethod.com;
+//student info using the instanceMethod which is objectReference::instanceMethod
+public interface StudentInfo {
+    void display();
+}
+class StudentDetails{
+    public void displayStudentDetails(){
+        System.out.println("Venu");
+        System.out.println("Java developer as well as java full stack developer");
+    }
+}
+class Main2{
+    public static void main(String[] args) {
+        StudentDetails studentDetails=new StudentDetails();
+        StudentInfo studentInfo=studentDetails::displayStudentDetails;
+        studentInfo.display();
+    }
+}
+------output---------
+Venu
+Java developer as well as java full stack developer
