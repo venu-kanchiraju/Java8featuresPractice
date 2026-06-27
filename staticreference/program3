@@ -1,0 +1,18 @@
+package java8practices.com;
+//multiplicatino using static reference
+public interface Multiplication {
+    int multiplication(int a,int b);
+}
+class Calculator1{
+    public static int mul(int a,int b){
+        return a*b;
+    }
+}
+class Main8{
+    public static void main(String[] args) {
+        Multiplication m=Calculator1::mul;
+        System.out.print(m.multiplication(2,4));
+    }
+}
+-------output--------
+8
