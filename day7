@@ -1,0 +1,22 @@
+package java8practices.com;
+//find the maximum element
+public interface Maximum {
+    int max(int a,int b);
+}
+class Main3{
+    public static void main(String[] args) {
+        Maximum m=new Maximum(){
+            @Override
+            public int max(int a,int b){
+                if(a>b){
+                    return a;
+                }else{
+                    return b;
+                }
+            }
+        };
+        System.out.println(m.max(3,4));
+    }
+}
+--------output----------
+  4
