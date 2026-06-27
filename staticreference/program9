@@ -1,0 +1,16 @@
+interface ConvertDouble {
+    double convert(String s);
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        ConvertDouble c = Double::parseDouble;
+
+        System.out.println(c.convert("25.75"));
+
+    }
+}
+-----------output----------
+25.75
