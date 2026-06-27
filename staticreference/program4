@@ -1,0 +1,18 @@
+package java8practices.com;
+//square a number using static reference
+public interface Square {
+    int square(int a);
+}
+class Calc{
+    public static int squareNow(int a){
+        return a*2;
+    }
+}
+class SquareTheNumber{
+    public static void main(String[] args) {
+        Square square=Calc::squareNow;
+        System.out.println(square.square(2));
+    }
+}
+--------output---------
+4
