@@ -1,0 +1,19 @@
+package java8practiceInstanceMethod.com;
+
+interface CompanyInfo{
+    void showCompany();
+}
+class Company{
+    public void show(){
+        System.out.println("IBM");
+    }
+}
+class Main9{
+    public static void main(String[] args) {
+        Company company=new Company();
+        CompanyInfo companyInfo=company::show;
+        companyInfo.showCompany();
+    }
+}
+--------output-----
+IBM
