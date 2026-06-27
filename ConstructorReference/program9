@@ -1,0 +1,25 @@
+package java8practiceConstructorReference.com;
+
+//using the collection for the constructor reference
+import java.util.ArrayList;
+import java.util.function.Supplier;
+
+public class Main15 {
+
+    public static void main(String[] args) {
+
+        Supplier<ArrayList<String>> supplier = ArrayList::new;
+
+        ArrayList<String> list = supplier.get();
+
+        list.add("Java");
+        list.add("Spring Boot");
+        list.add("MySQL");
+
+        System.out.println(list);
+
+    }
+
+}
+---------output----------
+[Java, Spring Boot, MySQL]
