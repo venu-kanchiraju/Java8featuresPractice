@@ -1,0 +1,23 @@
+package java8practiceConstructorReference.com;
+
+public interface ProductFactory {
+    Product create(int id,String name,double price);
+}
+class Product{
+    Product(int id,String name,double price){
+        System.out.println("The id is: "+id);
+        System.out.println("The Name is: "+name);
+        System.out.println("The price is: "+price);
+    }
+}
+class Main12{
+    public static void main(String[] args) {
+        ProductFactory productFactory=Product::new;
+        Product product=productFactory.create(1,"Venu",120000);
+        
+    }
+}
+-----------output-----
+The id is: 1
+The Name is: Venu
+The price is: 120000.0
