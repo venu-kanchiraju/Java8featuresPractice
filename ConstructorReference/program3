@@ -1,0 +1,18 @@
+package java8practiceConstructorReference.com;
+
+public interface CarInfo {
+    Car build();
+}
+class Car{
+    public Car(){
+        System.out.println("Car builted");
+    }
+}
+class Demo5{
+    public static void main(String[] args) {
+        CarInfo carInfo=Car::new;
+       Car car= carInfo.build();
+    }
+}
+-----output---------
+Car builted
