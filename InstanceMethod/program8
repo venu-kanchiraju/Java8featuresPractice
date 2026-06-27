@@ -1,0 +1,19 @@
+package java8practiceInstanceMethod.com;
+
+interface RestuarantInfo{
+    void food();
+}
+class Resturant{
+    public void showFood(){
+        System.out.println("Chicken Biryani");
+    }
+}
+class Main8{
+    public static void main(String[] args) {
+        Resturant rs=new Resturant();
+        RestuarantInfo resturantInfo=rs::showFood;
+        resturantInfo.food();
+    }
+}
+------------output--------------
+Chicken Biryani
