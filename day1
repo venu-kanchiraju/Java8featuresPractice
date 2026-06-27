@@ -1,5 +1,6 @@
 package java8practices.com;
 //functional interface which is only allow one abstract method is called functional interface.
+//using anonymous class
 interface Greeting {
     void hey();
 }
