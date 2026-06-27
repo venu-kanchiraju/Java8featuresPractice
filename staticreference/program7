@@ -1,0 +1,13 @@
+package java8practices.com;
+//squareRoot using static reference
+public interface SqrtNumber {
+    double sqrtNum(int a);
+}
+class Main11{
+    public static void main(String[] args) {
+        SqrtNumber sqrtNumber=Math::sqrt;
+        System.out.println(sqrtNumber.sqrtNum(64));
+    }
+}
+--------output--------
+8.0
