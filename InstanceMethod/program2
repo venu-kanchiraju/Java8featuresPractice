@@ -1,0 +1,19 @@
+package java8practiceInstanceMethod.com;
+//using InstanceMethod to print the Welcome mssg
+public interface Welcome {
+    void mssg();
+}
+class WelcomeMssg{
+    public void display(){
+        System.out.println("Welcome coder");
+    }
+}
+class Main3{
+    public static void main(String[] args) {
+        WelcomeMssg welcomeMssg=new WelcomeMssg();
+        Welcome welcome=welcomeMssg::display;
+      welcome.mssg();
+    }
+}
+--------output--------
+Welcome coder
