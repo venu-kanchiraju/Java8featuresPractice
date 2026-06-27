@@ -1,0 +1,22 @@
+package java8practices.com;
+//check if the number is even or odd
+public interface EvenOrOdd {
+    boolean isEvenOrOdd(int a);
+}
+class Main4{
+    public static void main(String[] args) {
+        EvenOrOdd evenOrOdd=new EvenOrOdd() {
+            @Override
+            public boolean isEvenOrOdd(int a) {
+               if(a%2==0){
+                   return true;
+               }else{
+                   return false;
+               }
+            }
+        };
+        System.out.println(evenOrOdd.isEvenOrOdd(4));
+    }
+}
+------------output-----
+true
