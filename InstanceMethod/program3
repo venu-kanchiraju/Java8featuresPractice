@@ -1,0 +1,21 @@
+package java8practiceInstanceMethod.com;
+
+public interface EmployeeDetails {
+    void display();
+}
+class Demo{
+    public void show(){
+        System.out.println("Show Employee ID: 101");
+        System.out.println("Java Developer");
+    }
+}
+class Demo1{
+    public static void main(String[] args) {
+        Demo demo=new Demo();
+        EmployeeDetails employeeDetails=demo::show;
+        employeeDetails.display();
+    }
+}
+---------output----------
+Show Employee ID: 101
+Java Developer
