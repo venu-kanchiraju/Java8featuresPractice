@@ -1,0 +1,19 @@
+package java8practiceInstanceMethod.com;
+
+public interface CarDetails {
+    void show();
+}
+class Car{
+    public void display(){
+        System.out.println("Ferrari");
+    }
+}
+class Main6{
+    public static void main(String[] args) {
+        Car car=new Car();
+        CarDetails cardetails=car::display;
+        cardetails.show();
+    }
+}
+------------output--------------
+Ferrari
