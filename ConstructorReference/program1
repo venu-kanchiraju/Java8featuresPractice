@@ -1,0 +1,18 @@
+package java8practiceConstructorReference.com;
+//constructor reference
+interface StudentFactory{
+    Student getStudent();
+}
+class Student {
+    Student() {
+        System.out.println("Student Object Created");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        StudentFactory factory = Student::new;
+        Student student = factory.getStudent();
+    }
+}
+----------output----------
+Student Object Created
