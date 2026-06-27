@@ -1,0 +1,11 @@
+package java8practices.com;
+//with return type with 2 parameters in lambda expression
+interface Multiply {
+    int multiply(int a,int b);
+}
+class Main2{
+public static void main(String[] args) {
+    Multiply m=(a,b)-> a*b;
+    System.out.println( m.multiply(2,4));
+}
+}
