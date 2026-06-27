@@ -1,0 +1,18 @@
+package java8practiceConstructorReference.com;
+
+public interface EmployeeFactory {
+    Employee2 create(int id,String name);
+}
+class Employee2{
+    public Employee2(int id,String name){
+        System.out.println("The Employee Id:  "+id+ " "+ "The Employee Name Is: "+name);
+    }
+}
+class Main11{
+    public static void main(String[] args) {
+        EmployeeFactory employeeFactory=Employee2::new;
+        Employee2 employee2=employeeFactory.create(1,"Venu");
+    }
+}
+---------output-----------
+The Employee Id: 1 The Employee Name Is: Venu
