@@ -1,0 +1,25 @@
+package java8practices.com;
+//static reference 
+interface Greeting1{
+    void sayHello();
+}
+
+class Welcome {
+
+    public static void message() {
+        System.out.println("Welcome to Java 8");
+    }
+}
+
+ class Main5 {
+
+    public static void main(String[] args) {
+
+        Greeting1 g = () -> Welcome.message();
+
+        g.sayHello();
+
+    }
+}
+-------------output-------------
+Welcome to Java 8
