@@ -1,0 +1,13 @@
+package java8practices.com;
+
+public interface Addition {
+    void addition(int a,int b);
+}
+class Main1{
+    public static void main(String[] args) {
+        Addition add=(a,b) -> System.out.println((a+b));
+        add.addition(2,5);
+    }
+}
+----------output------------
+  7
