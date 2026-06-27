@@ -1,0 +1,18 @@
+package java8practices.com;
+//addition of two numbers using the static reference
+public interface Additiion2 {
+    int add(int a,int b);
+}
+class Calculator {
+    public static int sum1(int a, int b) {
+        return a + b;
+    }
+}
+class Main7{
+    public static void main(String[] args) {
+        Additiion2 a=Calculator::sum1;
+        System.out.println(a.add(2,3));
+    }
+}
+----------output----------
+5
