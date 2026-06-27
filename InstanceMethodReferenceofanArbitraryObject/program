@@ -1,0 +1,14 @@
+package InstanceObjectanArbitraty.com;
+
+import java.util.Arrays;
+import java.util.List;
+public class Main {
+    public static void main(String[] args) {
+        List<String> list =
+                Arrays.asList("Banana","apple","Cat","dog");
+        list.sort(String::compareToIgnoreCase);
+        System.out.println(list);
+    }
+}
+-------output-------
+[apple, Banana, Cat, dog]
