@@ -1,0 +1,16 @@
+package InstanceObjectanArbitraty.com;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+//find the length of the string
+public class Main3 {
+    public static void main(String[] args) {
+        List<String>list= Arrays.asList("Venu","Thulasi","john","lucy");
+        List<Integer> list1=list.stream()
+                .map(String::length).collect(Collectors.toList());
+        System.out.println(list1);
+    }
+}
+----output---
+[4, 7, 4, 4]
