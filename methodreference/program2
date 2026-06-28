@@ -1,0 +1,18 @@
+package java8StaticMethodReference.com;
+
+public interface AdditionInfo {
+    int addition(int a,int b);
+}
+class Addition{
+    public static int add(int a,int b){
+        return a+b;
+    }
+}
+class Demo{
+    public static void main(String[] args) {
+        AdditionInfo additionInfo=Addition::add;
+        System.out.println(additionInfo.addition(2,4));
+    }
+}
+-------------output-------------
+6
