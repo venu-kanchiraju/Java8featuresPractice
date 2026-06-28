@@ -1,0 +1,13 @@
+package java8StaticMethodReference.com;
+//find the maximum element
+interface Main {
+    int max(int a,int b);
+}
+class Main1{
+    public static void main(String[] args) {
+        Main main=Math::max;
+        System.out.println(main.max(12,2));
+    }
+}
+----------output---------
+12
